@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey-Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey-Form</h1>
+    <p id="description">
+      This is a survey to see what type of coffee do people nearby like to drink
+      the most.
+    </p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label"
+          >Name :
+          <input id="name" type="text" required placeholder="Kate Simson"
+        /></label>
+        <label for="email" id="email-label"
+          >E-mail :
+          <input id="email" type="email" required placeholder="name@mail.com"
+        /></label>
+        <label for="number" id="number-label"
+          >Age :
+          <input id="number" type="number" min="5" max="100" placeholder="21"
+        /></label>
+        <label for="dropdown"
+          >Coffee drinker :
+          <select id="dropdown">
+            <option>(select one)</option>
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <p>Which coffee type do you usually drink?</p>
+        <label for="espresso"
+          ><input
+            id="espresso"
+            name="coffee-type"
+            type="radio"
+            class="inline"
+            value="esp"
+          />Espresso
+        </label>
+        <label for="cappucino">
+          <input
+            id="cappucino"
+            name="coffee-type"
+            type="radio"
+            class="inline"
+            value="cap"
+          />Cappucino</label
+        >
+        <label for="latte">
+          <input
+            id="latte"
+            name="coffee-type"
+            type="radio"
+            class="inline"
+            value="lat"
+          />Latte machiato</label
+        >
+      </fieldset>
+      <fieldset>
+        <p>Where do you drink your coffee at?</p>
+        <label for="home"
+          ><input
+            id="home"
+            type="checkbox"
+            value="h"
+            class="inline"
+          />Home</label
+        >
+        <label for="work"
+          ><input
+            id="work"
+            type="checkbox"
+            value="w"
+            class="inline"
+          />Work</label
+        >
+        <label for="coffshop"
+          ><input
+            id="coffshop"
+            type="checkbox"
+            value="cs"
+            class="inline"
+          />Coffee shop</label
+        >
+        <label for="rest"
+          ><input
+            id="rest"
+            type="checkbox"
+            value="r"
+            class="inline"
+          />Restaurant</label
+        >
+        <label for="other"
+          ><input
+            id="other"
+            type="checkbox"
+            value="o"
+            class="inline"
+          />Other</label
+        >
+      </fieldset>
+      <fieldset>
+        <p>Any questions?</p>
+        <label for="question">
+          <textarea
+            id="question"
+            rows="6"
+            cols="25"
+            placeholder="which is the best coffee?"
+          ></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
